@@ -1,3 +1,47 @@
 hello world
 
 Fala as coisas para mim ^^
+
+Feramentas que foram aprendidas / a sua função:
+$ git config --global user.name "Adriano Serafim" / Serve para indentificar ao programa quem você é. Isso tem como objetivo identificar quem está fazendo as alterações. Isso tem que ser definido todas as vezes que você vai salvar as configurações de um projeto.
+
+$ git config --global user.email "adriano_serafim_1@hotmail.com" / Serve para deixar um e-mail de viculo para caso queira entrar em contato ou sauvar na luvem no nome dessa pessoa. Isso tem que ser definido todas as vezes que você vai salvar as configurações de um projeto.
+
+$ git config --global core.editor (O seu editor) (ex: suble, emacs, vim) / Serve para você definir em qual tipo de linguagem de programação você está falando, pois apesar de ser parrecido as liguagem de programação de cada programa é diferente.
+
+$ git init / Cria um arquivo na pasta onde você está. Vale lembrar que ele vai usar o modelo do arquivo escolhido a cima. Normalmente não é utilizado.
+
+$ git config user.name & $ git config user.email & $ git config --list / Esse dois cód. vão te mostrar qual é o nome e o e-mail que estão sendo utilizados.
+
+$ mkdir (Nome da pasta) / É o comando  de criar pasta em um determinado local.
+
+$ cd (Nome da pasta) (Isso é do sistema MacOS) & $ dir (Nome da pasta) (Isso é do sistema Windows) / Abre a pasta ou arquivo que você quer. Uma pasta ou arquivo por vez.
+
+$ dir (O nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) /  É a mesma coisa do de cima... só escrevi de novo para mostrar mais informações e não deixar mauito confuso.
+
+$ dir .. / Volta uma pasta ou arquivo.
+
+$ vim (Nome do arquivo) / Serve para abrir e editar o arquivo dentro do git. Isso normalmente não é muito utilizado pois como cada liguagem tem a sua peculiaridade é muito fácil que ocorra erro de sintaxe.
+
+	A partir de agora esses comandos é para quando você esta dentro do arquivo o editando.
+	Caso você click na letra i você a poder editar o arquivo, caso você click em esc ele sai do modo de edição, caso você click em Stick (Cetinha para cima) e a tecla ; o programa vai entender que você quer incerir um comando, caso você click em w e enter após clicar em Stick e ; o programa vai entender que você quer modificar o arquivo com o que você encreveu, caso você click em q e enter após clicar em Stick e ; o programa vai entender que você quer fechar e sair da edição de arquivo, você pode usar o comando w e q juntos fazendo com que ele salve e saia do arquivo.
+	A partir de agora nos voltamos a os comando utilizados fora do editor de arquivos.
+
+Explicação do git: O git tem 4 estados
+	Untracked: São arquivos que não estão no git.
+	Unmodified: São  arquivos que não tem modificações para salvar
+	Modified: São arquivos que tem modificação para salvar
+	Staged: Área onde é criada uma versão de modificação do arquivo, após dar um commit no arquivo ele volta ao estatos Unmodified eo git salva o utimo Staged para caso você queira voltar nele algum momento.
+
+$ ls -la / Ele fala o histórico de edção que ocorreu na pasta
+
+$ ls / Vai te falar quais são os arquivos que estão naquela pasta que estão sendo vistos pelo git.
+
+$ git status / Serve para ver os status dos aquivos no git na quela pasta.
+
+$ git add (Nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) / Serve para adicionar o arquivo a o git, tirano ele do estado Untracked e colocando ele no estado Unmodified. Esse comando tambem serve para tirar o arquivo do Modified para Staged, sendo assim ele esta salvando uma cópia de versão desse arquivo sempre que você o faz.
+
+
+
+
+
