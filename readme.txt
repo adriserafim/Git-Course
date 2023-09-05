@@ -61,3 +61,4 @@ $ git reset (Escolha entre os três tipos --soft, --mixed, --hard)
 	--hard (Chave do commit) / Ele volta o arquivo para o estado Unmodified da chave em questão.
 OBS: Tome cuidado com o essa ferramenta, pois a utilizando você mata o histórico dos commit entre o ultimo commit realizado e o commit que esta voltando. E tambem  você pode ter problemas ao subir os arquivos gando já teve pessoas que fizeram alterações na auterações dele, nesse caso você vai ter que utilizar a ferramemta fort.
 
+Exercício pratico de reset - Feito ^^
