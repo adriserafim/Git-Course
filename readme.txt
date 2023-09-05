@@ -41,11 +41,13 @@ $ git status / Serve para ver os status dos aquivos no git na quela pasta.
 
 $ git add (Nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) / Serve para adicionar o arquivo a o git, tirano ele do estado Untracked e colocando ele no estado Unmodified. Esse comando tambem serve para tirar o arquivo do Modified para Staged, sendo assim ele esta salvando uma cópia de versão desse arquivo sempre que você o faz.
 
-$ git commit -m "(Descrição de edição)" / Você so pode fazer commit nos arquivos que estão no estado Staged e sempre é bom colocar uma descrião, pois assim que você vai identificar em qual versão você quer estar. Após o commit o git te dar a uma chave de versão, para você visualizar que versão você acabou de fazer. Você pode colocar cometarios adicionais no commit acrecentando -m "(Comentario adicional)", porem muitos comando so deixão ser visualizados a descrião e não mostram que há comentario adicional.
+$ git commit -m "(Descrição de edição)" / Você so pode fazer commit nos arquivos que estão no estado Staged e sempre é bom colocar uma descrião, pois assim que você vai identificar em qual versão você quer estar. Após o commit o git te dar a uma chave de versão, para você visualizar que versão você acabou de fazer. Você pode colocar cometarios adicionais no commit acrecentando -m "(Comentario adicional)", porem muitos comando so deixão ser visualizados a descrião e não mostram que há comentario adicional. Caso você vai dar commit em um arquivo que já tinha sido sofrido um commit antes você pode -am "(Descrição de edição)" fazendo isso você não preciza fazer a adição da modificação " no cado seria $ git add"
 
 $ git log / Serve para ver o historico de commit daquala pasta. Esse código pode ser inclementado com algumas configurações a mais que iram nos dar inforamções importantes do arquivo. Tipo --decorate que ira nos dar o estatos de brand do arquivo, --author "(Nome do Autor a ser procurado, ou no minimo as iniciais)", --graph que ira mostrar de forma gráfica como esta os commit's realizados.
 
 $ git shortlog / Mostrar em ordem alfabética os altorer que fizeram commit, quantas vezes eles fizeram o commit e em qual arquivo foi feito o commit, e qual a descrição dos commit's. Você pode colocar no código -sn que ira mostrar um lista de pessoas que fizeram commit e quantos commit aquela pessoa realizou.
 
 $ git show (Chave do commit) / Mostra com detalhes a modificação que causou esse commit no arquivo.
+
+$ git diff / Mostra a diferenças entre os arquivos Unmodified com o arquivos Modified. Você pode colocar no código --name-only que lista para você o nome dos aquivos que estão no estados Modified.
 
