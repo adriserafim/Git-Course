@@ -43,7 +43,9 @@ $ git add (Nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exe
 
 $ git commit -m "(Descrição de edição)" / Você so pode fazer commit nos arquivos que estão no estado Staged e sempre é bom colocar uma descrião, pois assim que você vai identificar em qual versão você quer estar. Após o commit o git te dar a uma chave de versão, para você visualizar que versão você acabou de fazer. Você pode colocar cometarios adicionais no commit acrecentando -m "(Comentario adicional)", porem muitos comando so deixão ser visualizados a descrião e não mostram que há comentario adicional.
 
+$ git log / Serve para ver o historico de commit daquala pasta. Esse código pode ser inclementado com algumas configurações a mais que iram nos dar inforamções importantes do arquivo. Tipo --decorate que ira nos dar o estatos de brand do arquivo, --author "(Nome do Autor a ser procurado, ou no minimo as iniciais)", --graph que ira mostrar de forma gráfica como esta os commit's realizados.
 
+$ git shortlog / Mostrar em ordem alfabética os altorer que fizeram commit, quantas vezes eles fizeram o commit e em qual arquivo foi feito o commit, e qual a descrição dos commit's. Você pode colocar no código -sn que ira mostrar um lista de pessoas que fizeram commit e quantos commit aquela pessoa realizou.
 
-
+$ git show (Chave do commit) / Mostra com detalhes a modificação que causou esse commit no arquivo.
 
