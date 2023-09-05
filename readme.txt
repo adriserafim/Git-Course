@@ -41,6 +41,8 @@ $ git status / Serve para ver os status dos aquivos no git na quela pasta.
 
 $ git add (Nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) / Serve para adicionar o arquivo a o git, tirano ele do estado Untracked e colocando ele no estado Unmodified. Esse comando tambem serve para tirar o arquivo do Modified para Staged, sendo assim ele esta salvando uma cópia de versão desse arquivo sempre que você o faz.
 
+$ git commit -m "(Descrição de edição)" / Você so pode fazer commit nos arquivos que estão no estado Staged e sempre é bom colocar uma descrião, pois assim que você vai identificar em qual versão você quer estar. Após o commit o git te dar a uma chave de versão, para você visualizar que versão você acabou de fazer. Você pode colocar cometarios adicionais no commit acrecentando -m "(Comentario adicional)", porem muitos comando so deixão ser visualizados a descrião e não mostram que há comentario adicional.
+
 
 
 
