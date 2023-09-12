@@ -1,4 +1,4 @@
-hello world
+Hello World
 
 Fala as coisas para mim ^^
 
@@ -63,7 +63,7 @@ OBS: Tome cuidado com o essa ferramenta, pois a utilizando você mata o históri
 
 Exercício pratico de reset - Feito ^^
 
-Apartir de agora nos vamos colocar os aquivos no repositorio remoto. Para fazer isso primeiro temos que criar um repositorio remoto. Isso é facil de criar é só clicar no botão "New repository" no github e colocar o nome para ele. Lá ira perguntar se você quer deixar o seu repositorio publico ou privado e também ira perguntar se você quer deixar os aquivos 100% onlines... apos decidir o que você quer é só clicar em criar repositorio "Create repository".
+Apartir de agora nos vamos colocar os aquivos no repositório remoto. Para fazer isso primeiro temos que criar um repositório remoto. Isso é facil de criar é só clicar no botão "New repository" no github e colocar o nome para ele. Lá ira perguntar se você quer deixar o seu repositório publico ou privado e também ira perguntar se você quer deixar os aquivos 100% onlines... apos decidir o que você quer é só clicar em criar repositório "Create repository".
 
 Essa parte tem que fazer um vez por maquina utilizada.
 	Agora vamos criar uma chave SSH para o github saber que os aquivos mandados desse computador é você e colocar na sua pasta. A descrição para a criação da chave está no site de ajuda do github (https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), apos a criação você tem que visualizar a chave no programa e a colocar nas configuração do github na internete.
@@ -72,6 +72,13 @@ Feito isso agora irei mostrar alguns comando relacionados ao assunto e irei dar 
 
 $ cd ~/.ssh/ (Utilize onde estivar a pasta onde a chave está) / Isso ira abrir a pasta donde está localizado a pasta, essa pasta é oculta. Caso você de o comando "$ ls" apos esse comando, ele ira mostrar as chaves dentro da pasta. 
 
-$ cat (O nome da chave que você quer utilizar).pub & $ more (O nome da chave que você quer utilizar).pub & $ vi (O nome da chave que você quer utilizar).pub (Lembrando que a chave que deve ser utilizada é o arquivo com o dominio .pub) / Isso abre o arquivo e mostra o codgo da chave que você que copiar para incerir na configuração do github.
+$ cat (O nome da chave que você quer utilizar).pub & $ more (O nome da chave que você quer utilizar).pub & $ vi (O nome da chave que você quer utilizar).pub (Lembrando que a chave que deve ser utilizada é o arquivo com o dominio .pub) / Isso abre o arquivo e mostra o código da chave que você que copiar para incerir na configuração do github.
 
- 
+$ git remote add (Nome do repositorio que ira ser enviado) / Serve para definir em qual repositório você está enviando os arquivos.
+
+$ git remote / Ira mostrar qual são os repositórios linkados. Caso você coloque  na frente do código "-v" ele ira mostrar mais informações sobre o repositório.
+
+$ git branch -M main / Não sei ao serto o que faz, mas acredito eu que ele define o branch que eu estou como o branch main
+
+$ git push -u (Nome do repositório) (Nome do branch) / Ira mandar os arquivos que sofrerão commit para o repositório. O "-u" no código é uma criação de atalho, assim na proxima vez que você for colocar no repositório remoto não precisara digitar o nome do repositorio, isso quer dizer que esse parte pode ser tirada do código (exemplo: $ git push origin main).
+
