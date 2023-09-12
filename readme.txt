@@ -15,11 +15,11 @@ $ git config user.name & $ git config user.email & $ git config --list / Esse do
 
 $ mkdir (Nome da pasta) / É o comando  de criar pasta em um determinado local.
 
-$ cd (Nome da pasta) (Isso é do sistema MacOS) & $ dir (Nome da pasta) (Isso é do sistema Windows) / Abre a pasta ou arquivo que você quer. Uma pasta ou arquivo por vez.
+$ cd (Nome da pasta) (Isso é do sistema Windows) & $ dir (Nome da pasta) (Isso é do sistema MacOS) / Abre a pasta ou arquivo que você quer. Uma pasta ou arquivo por vez.
 
-$ dir (O nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) /  É a mesma coisa do de cima... só escrevi de novo para mostrar mais informações e não deixar mauito confuso.
+$ cd (O nome do arquivo) (Não pode esquecer do tipo do arquivo. Como por exemplo esse arquivo é .txt) /  É a mesma coisa do de cima... só escrevi de novo para mostrar mais informações e não deixar mauito confuso.
 
-$ dir .. / Volta uma pasta ou arquivo.
+$ cd .. / Volta uma pasta ou arquivo.
 
 $ vim (Nome do arquivo) / Serve para abrir e editar o arquivo dentro do git. Isso normalmente não é muito utilizado pois como cada liguagem tem a sua peculiaridade é muito fácil que ocorra erro de sintaxe.
 
@@ -62,3 +62,16 @@ $ git reset (Escolha entre os três tipos --soft, --mixed, --hard)
 OBS: Tome cuidado com o essa ferramenta, pois a utilizando você mata o histórico dos commit entre o ultimo commit realizado e o commit que esta voltando. E tambem  você pode ter problemas ao subir os arquivos gando já teve pessoas que fizeram alterações na auterações dele, nesse caso você vai ter que utilizar a ferramemta fort.
 
 Exercício pratico de reset - Feito ^^
+
+Apartir de agora nos vamos colocar os aquivos no repositorio remoto. Para fazer isso primeiro temos que criar um repositorio remoto. Isso é facil de criar é só clicar no botão "New repository" no github e colocar o nome para ele. Lá ira perguntar se você quer deixar o seu repositorio publico ou privado e também ira perguntar se você quer deixar os aquivos 100% onlines... apos decidir o que você quer é só clicar em criar repositorio "Create repository".
+
+Essa parte tem que fazer um vez por maquina utilizada.
+	Agora vamos criar uma chave SSH para o github saber que os aquivos mandados desse computador é você e colocar na sua pasta. A descrição para a criação da chave está no site de ajuda do github (https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), apos a criação você tem que visualizar a chave no programa e a colocar nas configuração do github na internete.
+
+Feito isso agora irei mostrar alguns comando relacionados ao assunto e irei dar contunuidade ao conteudo.
+
+$ cd ~/.ssh/ (Utilize onde estivar a pasta onde a chave está) / Isso ira abrir a pasta donde está localizado a pasta, essa pasta é oculta. Caso você de o comando "$ ls" apos esse comando, ele ira mostrar as chaves dentro da pasta. 
+
+$ cat (O nome da chave que você quer utilizar).pub & $ more (O nome da chave que você quer utilizar).pub & $ vi (O nome da chave que você quer utilizar).pub (Lembrando que a chave que deve ser utilizada é o arquivo com o dominio .pub) / Isso abre o arquivo e mostra o codgo da chave que você que copiar para incerir na configuração do github.
+
+ 
