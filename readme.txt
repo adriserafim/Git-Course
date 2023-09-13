@@ -91,7 +91,7 @@ $ git checkout -b (Nome do branch) / Cria um novo branch (Ponto de referência d
 
 $ git branch / Mostras os branch e mostra com um asterisco na frente o branch que você está.
 
-$ git checkout (Nome do branch) / Moda para o branch que você quer.
+$ git checkout (Nome do branch) / Muda para o branch que você quer.
 
 $ git branch -D (Nome do branch) / Exclui branch criados.
 
