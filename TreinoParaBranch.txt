@@ -3,3 +3,5 @@ Treino para branch
 Primeira parte Merge
 
 Segundo parte Rebase
+
+Por algum motivo quando eu fui fazer a junsão no Rebase ele excluiu do historico o Merge que eu tinha feito anteriormente.

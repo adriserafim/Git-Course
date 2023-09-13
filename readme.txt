@@ -63,6 +63,8 @@ OBS: Tome cuidado com o essa ferramenta, pois a utilizando você mata o históri
 
 Exercício pratico de reset - Feito ^^
 
+$ git revert (Chave do commit) / Ele volta o arquivo para o commit pedido mas ele não apaga os comites feitos posteriores a ele, sendo assim voce pode voltar para eles depois.
+
 Apartir de agora nos vamos colocar os aquivos no repositório remoto. Para fazer isso primeiro temos que criar um repositório remoto. Isso é facil de criar é só clicar no botão "New repository" no github e colocar o nome para ele. Lá ira perguntar se você quer deixar o seu repositório publico ou privado e também ira perguntar se você quer deixar os aquivos 100% onlines... apos decidir o que você quer é só clicar em criar repositório "Create repository".
 
 Essa parte tem que fazer um vez por maquina utilizada.
@@ -95,6 +97,20 @@ $ git checkout (Nome do branch) / Muda para o branch que você quer.
 
 $ git branch -D (Nome do branch) / Exclui branch criados.
 
+$ git push (Nome do repositório remoto) :(Nome do Branch) / Isso ira apagar a Branch no repositório remoto.
+
 $ git merge (Nome do branch que quer mesclar) / Mescla os arquivos dos branch de maneira Merge.
 
 $ git rebase (Nome do branch que quer mesclar) / Mescla os arquivos dos branch de maneira Rebase.
+
+$ vi .gitignore / Ele faz com que osistema do git ignore há existência de alguns arquivos. Para fazer isso é so escrever no arquivo .gitignore qual é o tipo do arquivo que você quer iguinorar ou o nome do arquivo que você quer ignorar (vale falar que para falar sobre qualquer tipo de arquivos tem que colocar o nome dele como *, exemplo: *.txt).
+
+$ git stash / Ele guarda as modificações feitas e deixa em stand by depois quando você quiser voltar com a modificação feita é só dar $ git stash apply, Caso voê digite o código $ git stash list ele vai listar tudo o que ele esta deixando em stand by, se você digitar $ git stash clear ele limpa todas as modificações armazenadas no stand by.
+
+$ git config --global alias.(Como você quer chamar o comando) (Como o comando e realmente chamado) / serve para você criar atralhos para não ter que escrever toda hora a mesma coisa.
+
+$ git tag / Mostra as Tag's dentro do git, para coloca Tag's deve se colocar na frente do código o "-a (Numero da versão, normamente escrito em 9.9.9)" as Tag enfatiza commit's importantes, você pode colocar anotações nas Tag's colocando na frente do código de adição "-m "(Descrição)"", e caso você utilise o código "-d (Numero da versão)" ele ira deletar a Tag que você criou.
+
+$ git push (Nome do repositório remoto) (Branch do repositório) --tags / Isso faz com que as Tag's subam para o repositório remoto.
+
+$ git push (Nome do repositório remoto) :(Numero da versão da Tag) / Isso ira apagar a Tag no repositório remoto.
