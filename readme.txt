@@ -82,3 +82,16 @@ $ git branch -M main / Não sei ao serto o que faz, mas acredito eu que ele defi
 
 $ git push -u (Nome do repositório) (Nome do branch) / Ira mandar os arquivos que sofrerão commit para o repositório. O "-u" no código é uma criação de atalho, assim na proxima vez que você for colocar no repositório remoto não precisara digitar o nome do repositorio, isso quer dizer que esse parte pode ser tirada do código (exemplo: $ git push origin main).
 
+$ git clone (Chave de clonagem que o github fornece) (nome da pasta que sera baixado os arquivos) / Ira clonar para você os arquivos do repositório que você deseja no github.
+
+
+$ git checkout -b (Nome do branch) / Cria um novo branch (Ponto de referência do arquivos), o branch padrão sempre anda junto com o commit, mas é possivel criar vairos pontos de referencia e juntar eles no final. Há duas maneiras de juntar os branch, elas são Merge e Rebase:
+	Merge une os branch criando um novo commit na linha de histórico, além de deixar visivel a derivação do branch no histórico.
+	Rebase une o branch colocando o seu último commit na frente da linha de histórica do arquivo. Isso faz com que o historico do branch sejá apagado, mas deixa o histórico linear, tornando assim o histórico menos poluído
+
+$ git branch / Mostras os branch e mostra com um asterisco na frente o branch que você está.
+
+$ git checkout (Nome do branch) / Moda para o branch que você quer.
+
+$ git branch -D (Nome do branch) / Exclui branch criados.
+
