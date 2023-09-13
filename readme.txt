@@ -95,3 +95,6 @@ $ git checkout (Nome do branch) / Muda para o branch que você quer.
 
 $ git branch -D (Nome do branch) / Exclui branch criados.
 
+$ git merge (Nome do branch que quer mesclar) / Mescla os arquivos dos branch de maneira Merge.
+
+$ git rebase (Nome do branch que quer mesclar) / Mescla os arquivos dos branch de maneira Rebase.

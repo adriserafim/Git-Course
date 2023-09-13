@@ -1,3 +1,5 @@
 Treino para branch
 
-Primeira parate merge
+Primeira parte Merge
+
+Segundo parte Rebase
